@@ -1,24 +1,26 @@
-# Flask Quickstart
-
-from flask import Flask
-
-# set FLASK_APP environment variable
-# e.g. "set FLASK_APP=main.py" (or the corresponding command on other systems)
-app = Flask(__name__)
+import time
+current_time = time.time()
+print(current_time)
 
 
-# using decorators
-# displayed when accessing http://127.0.0.1:5000
-@app.route("/")
-def hello():
-    return "Hello, World!"
+def speed_calc_decorator(function):
+    def wrapper_function():
+        start_time = time.time()
+        function()
+        end_time = time.time()
+        print(f"{function.__name__} run speed: {end_time - start_time}s")
+    return wrapper_function
 
 
-# displayed when accessing http://127.0.0.1:5000/bye
-@app.route("/bye")
-def say_bye():
-    return "Bye!"
 
+def fast_function():
+    for i in range(10000000):
+        i * i
+        
+def slow_function():
+    for i in range(100000000):
+        i * i
 
-if __name__ == "__main__":
-    app.run()
+        
+fast_function()
+slow_function()     

@@ -1,7 +1,7 @@
 from spider import get_latest_price
 import smtplib
 
-BUY_PRICE = 1000
+BUY_PRICE = 170
 
 product_url = input("Enter the product page link : ")
 

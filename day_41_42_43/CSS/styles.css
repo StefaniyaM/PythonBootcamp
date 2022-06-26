@@ -1,0 +1,166 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 150%;
+
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 4.625rem;
+  color: #66BFBF;
+
+
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 10px;
+
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+p {
+
+  line-height: 2;
+  font-size: 1rem;
+
+}
+
+hr {
+  border-style: dotted none none;
+  border-color: #DFDFDE;
+  border-width: 6px;
+  width: 4%;
+  margin: 100px auto;
+
+}
+
+a {
+  color: #11999e;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eaf6f6;
+}
+
+
+
+
+.top-container {
+  background-color: #E4F9F5;
+  padding-top: 100px;
+  position: relative;
+}
+
+.bottom-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.top-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.my-pic {
+  border-radius: 50%;
+
+}
+
+.firstParagraph {
+  width: 40%;
+  margin:auto;
+
+}
+
+
+.computer-pic {
+  padding: 0;
+  width: 25%;
+  float:left;
+  margin-right: 30px;
+}
+
+
+.app-pic {
+
+  width:25%;
+  float:right;
+  margin-left: 30px;
+}
+
+.computer2-pic {
+  width:25%;
+  float: left;
+  margin-right:30px
+
+}
+
+
+.skill-row {
+  width: 50%;
+  margin:100px auto 100px auto;
+  text-align: left;
+  font-size: 1rem;
+}
+
+
+
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.btn {
+  background-image: linear-gradient(#66bfbf 20%, #11999E);
+  border-radius: 8px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+  top: 25px;
+}
+
+.btn:hover {
+  filter: brightness(1.2);
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+}
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding:20px 0;
+}
+
+.programmer {
+  font-size: 1px;
+}
+.landscape {
+  position:relative;
+  width:95%;
+  bottom: 50px;
+  z-index: 4;
+}

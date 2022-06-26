@@ -1,0 +1,97 @@
+"""
+ex 1: You are going to write a List Comprehension to create a new list called squared_numbers. This new list should contain every number in the list numbers but each number should be squared.
+"""
+
+numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+# 🚨 Do Not Change the code above 👆
+
+# Write your 1 line code 👇 below:
+
+squared_numbers = [number*number for number in numbers]
+
+# Write your code 👆 above:
+
+print(squared_numbers)
+
+#=======================
+
+"""
+Ex 2 : You are going to write a List Comprehension to create a new list called result. This new list should only contain the even numbers from the list numbers.
+"""
+
+numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+# 🚨 Do Not Change the code above
+
+# Write your 1 line code 👇 below:
+
+result = [number for number in numbers if number % 2 == 0]
+
+# Write your code 👆 above:
+
+print(result)
+
+#=========================
+
+"""
+Ex 3 :
+Take a look inside file1.txt and file2.txt. They each contain a bunch of numbers, each number on a new line.
+You are going to create a list called result which contains the numbers that are common in both files.
+"""
+
+with open("file1.txt") as file1:
+    numbers1 = file1.readlines()
+
+with open("file2.txt") as file2:
+    numbers2 = file2.readlines()
+
+result = [int(number.strip()) for number in numbers1 if number in numbers2]
+
+# Write your code above 👆
+
+print(result)
+
+#=========================
+
+"""
+Ex 4 :
+You are going to use Dictionary Comprehension to create a dictionary called result that takes each word in the given sentence and calculates the number of letters in each word.
+Try Googling to find out how to convert a sentence into a list of words.
+Do NOT Create a dictionary directly. Try to use Dictionary Comprehension instead of a Loop.
+"""
+
+sentence = "What is the Airspeed Velocity of an Unladen Swallow?"
+# Don't change code above 👆
+
+# Write your code below:
+
+words = sentence.split(" ")
+words = [word.replace("?","") for word in words]
+
+result = {word:len(word) for word in words}
+
+print(result)
+
+#==========================
+
+"""
+Ex 5 :
+You are going to use Dictionary Comprehension to create a dictionary called weather_f that takes each temperature in degrees Celcius and converts it into degrees Farenheight.
+"""
+
+weather_c = {
+    "Monday": 12,
+    "Tuesday": 14,
+    "Wednesday": 15,
+    "Thursday": 14,
+    "Friday": 21,
+    "Saturday": 22,
+    "Sunday": 24,
+}
+# 🚨 Don't change code above 👆
+
+
+# Write your code 👇 below:
+
+weather_f = {day: temperature*9/5 +32 for (day, temperature) in weather_c.items()}
+
+print(weather_f)
